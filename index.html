@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="An example pen showing how a basic CSS Grid container can create a nice, responsive card layout.">
+  <title> Responsive Drop Down Navigation Menu | CodingLab </title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index_.css">
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class="bx bx-menu"></i>
+      <div class="logo"><a href="#">Undercunstruction</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Undercunstruction</span>
+          <i class="bx bx-x"></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li>
+            <a href="#">Login</a>
+            <i class="bx bxs-chevron-down htmlcss-arrow arrow  "></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="login_.html"> Staff  Login</a></li>
+              <li><a href="login_.html">Student Login</a></li>
+              <li><a href="#">Fees  & cost</a></li>
+              <li class="more">
+                <a href="signup.html">Signup</a>
+                  <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Staff Signup</a></li>
+                  <li><a href="signup.html">Student Signup</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Mandatory Public Disclosure</a>
+            <i class="bx bxs-chevron-down js-arrow arrow "></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Information</a></li>
+              <li><a href="#">Result & Academics</a></li>
+              <li><a href="#">Staff(Teaching)</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Admission</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="index.js"></script>
+  <div class="grid">
+    <div class="grid__item">
+      <div class="card"><img class="card__img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2250&amp;q=80" alt="Snowy Mountains">
+        <div class="card__content">
+          <h1 class="card__header">A starry night</h1>
+          <p class="card__text">.</p>
+          <button class="card__btn">Explore <span>&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="card"><img class="card__img" src="https://images.unsplash.com/photo-1485160497022-3e09382fb310?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2250&amp;q=80" alt="Desert">
+        <div class="card__content">
+          <h1 class="card__header">Misty mornings</h1>
+          <p class="card__text">.</p>
+          <button class="card__btn">Explore <span>&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="grid__item">
+      <div class="card"><img class="card__img" src="https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80" alt="Canyons">
+        <div class="card__content">
+          <h1 class="card__header">Utah sunsets</h1>
+          <p class="card__text">Sunsets over the <strong>stunning</strong> .</p>
+          <button class="card__btn">Explore <span>&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
