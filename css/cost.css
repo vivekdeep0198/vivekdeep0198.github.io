@@ -1,0 +1,45 @@
+body
+{
+    counter-reset: Serial;           /* Set the Serial counter to 0 */
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: 10px solid #948e2b;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption{
+  font-size: 1.5em;
+  margin: 0.5em 0.75em;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content:counter(Serial)  ; /* Display the counter */
+
+}
+@media screen and (max-width: 600px){ 
+  table{
+    border: 0;
+  }
+  
+}
+table caption{
+  font-size: 1.3em;
+  text-align: center;
+}
